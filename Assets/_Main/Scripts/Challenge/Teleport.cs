@@ -3,11 +3,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Challenge : MonoBehaviour
+public class Teleport : MonoBehaviour
 {
-    public delegate void Teleport(Vector3 position);
+    public delegate void Spawn(Vector3 position);
     
-    public static event Teleport OnTeleport;
+    public static event Spawn OnTeleport;
 
     private void Update()
     {

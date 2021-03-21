@@ -7,7 +7,7 @@ public class CubeController : MonoBehaviour
 {
     private void Start()
     {
-        Challenge.OnTeleport += UpdatePosition;
+        Teleport.OnTeleport += UpdatePosition;
     }
 
     private void UpdatePosition(Vector3 teleportPosition)
@@ -17,6 +17,6 @@ public class CubeController : MonoBehaviour
 
     private void OnDisable()
     {
-        Challenge.OnTeleport -= UpdatePosition;
+        Teleport.OnTeleport -= UpdatePosition;
     }
 }
