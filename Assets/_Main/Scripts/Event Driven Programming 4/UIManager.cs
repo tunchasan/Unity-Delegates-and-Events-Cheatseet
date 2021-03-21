@@ -15,7 +15,7 @@ public class UIManager : Singleton<UIManager>
         
         deathCountText.text = "Death Count: " + _deathCount.ToString();
     }
-    
+
     private void OnEnable()
     {
         Player.OnDeath += UpdateDeathCount;
