@@ -9,7 +9,7 @@ public class Delegates : MonoBehaviour
 
    // Store Method
    private ChangeColor _onColorChange;
-
+   
    private delegate void Complete();
 
    private Complete _onComplete;
