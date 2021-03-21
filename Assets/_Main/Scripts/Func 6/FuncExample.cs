@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class FuncExample : MonoBehaviour
 {
-    // Return type delegate
+    // Return type delegate usage
     // public delegate int CharacterLength(string text);
 
     // Function Delegate, also knows as Return Type Delegate
@@ -14,13 +14,16 @@ public class FuncExample : MonoBehaviour
 
     private void Start()
     {
-        _characterLength = GetCharacters;
+        // _characterLength = GetCharacters;
         
+        // Lambda Usage
+        _characterLength = (text) => text.Length;
+
         Debug.Log(_characterLength("Jonathan Dell"));
     }
 
-    private int GetCharacters(string name)
+    private int GetCharacters(string text)
     {
-        return name.Length;
+        return text.Length;
     }
 }
